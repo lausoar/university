@@ -1,0 +1,17 @@
+#生产环境
+text: 这里是生产环境
+# http://47.108.156.9/
+
+server:
+  ip: 47.102.122.171
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.102.122.171:3306/university?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: university
+    password: root
+
+files:
+  uploads:
+    path: /www/wwwroot/47.102.122.171/uploads/

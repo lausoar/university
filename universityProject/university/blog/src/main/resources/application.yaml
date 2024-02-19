@@ -1,0 +1,15 @@
+#开发环境  生产环境
+server:
+  port: 9999
+spring:
+  profiles:
+    active: prod
+
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+#  配置sql日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # typeEnumsPackage or type-enums-package 都可以
+  type-enums-package: com.project.blog.enums
